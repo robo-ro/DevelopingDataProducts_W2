@@ -1,0 +1,32 @@
+# Set the route
+setwd("D:/1-1. R studio/Lecture9. Developing data product/week2")
+
+# Today date
+format(Sys.Date(),"%m-%d-%Y")
+
+# install.packages("leaflet")
+library(leaflet)
+
+
+# Search the longitude and latitude in Google
+mark1<-leaflet()
+mark2<-addTiles(mark1)
+mark3<-addMarkers(mark2,lng=-117.1611,lat=32.7157,popup="San Diego")
+mark3<-addMarkers(mark3,lng=-115.1398,lat=36.1699,popup="Las Vegas")
+mark3<-addMarkers(mark3,lng=-112.1130,lat=36.1070,popup="Grand Canyon")
+mark3<-addMarkers(mark3,lng=-122.4194,lat=37.7749,popup="San Fransisco")
+mark3<-addMarkers(mark3,lng=-87.6298,lat=41.8781,popup="Chicago")
+mark3<-addMarkers(mark3,lng=-79.3832,lat=43.6532,popup="Toronto")
+mark3<-addMarkers(mark3,lng=-79.0849,lat=43.0896,popup="Niagara Falls")
+mark3<-addMarkers(mark3,lng=-96.7970,lat=32.7767,popup="Dallas")
+mark3<-addMarkers(mark3,lng=-97.7431,lat=30.2672,popup="Austin")
+mark3<-addMarkers(mark3,lng=-95.3698,lat=29.7604,popup="Houston")
+mark3<-addMarkers(mark3,lng=-90.0715,lat=29.9511,popup="New Orleans")
+mark3<-addMarkers(mark3,lng=-118.2437,lat=34.0522,popup="Los Angeles")
+mark3<-addMarkers(mark3,lng=-117.0382,lat=32.5149,popup="Tijuana")
+mark3<-addMarkers(mark3,lng=-71.0589,lat=42.3601,popup="Boston")
+mark3<-addMarkers(mark3,lng=-74.0059,lat=40.7128,popup="New York")
+mark3<-addMarkers(mark3,lng=-77.0369,lat=38.9072,popup="Washington DC")
+mark3<-addMarkers(mark3,lng=-119.6982,lat=34.4208,popup="Santa Barbara")
+
+mark3
