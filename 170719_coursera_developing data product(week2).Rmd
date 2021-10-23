@@ -6,8 +6,6 @@ output:
 ---
 
 
-## Executive summary
-When I was an exchange student in US, I took a trip in weekends and vacations. At that time, it gave me a lot of good memories, and I want to mark on the map using leaflet() function.
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
